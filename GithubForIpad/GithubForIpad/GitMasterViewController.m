@@ -6,15 +6,17 @@
 //  Copyright (c) 2011 vaughn. All rights reserved.
 //
 #define JSON_Notification @"JSONResponseNotification"
-
+#define kBlobs @ "http://github.com/api/v2/json/blob/all/%@/%@/master"//username,repo
 #import "GitMasterViewController.h"
-
+#import "ResultCell.h"
 #import "GitDetailViewController.h"
+#import "FilesListViewController.h"
+#import "CommitsViewController.h"
 
 @implementation GitMasterViewController
 
 @synthesize detailViewController = _detailViewController;
-@synthesize resultsArray;
+@synthesize resultsArray,username,reposit;
 
 - (void)awakeFromNib
 {
@@ -33,6 +35,8 @@
 
 - (void)viewDidLoad
 {
+    self.tableView.backgroundView = [[UIView alloc]init];
+    self.tableView.backgroundColor = [UIColor colorWithRed:.22 green:.27 blue:.35 alpha:1];
     self.resultsArray = [[NSMutableArray alloc]init];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -75,29 +79,58 @@
     return YES;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.resultsArray count];
+    return 1;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return [self.resultsArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIdentifier = @"Cell";
+    static NSString *cellIdentifier = @"ResultCell";
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    ResultCell *cell = (ResultCell*)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
 
-    NSString *nameOfRepository = [[self.resultsArray objectAtIndex:indexPath.row]valueForKey:@"description"];
-    if ([nameOfRepository length] <= 0) {
-        nameOfRepository = @"No Description";
+    NSString *descriptionOfRepository = [[self.resultsArray objectAtIndex:indexPath.section]valueForKey:@"description"];
+    if ([descriptionOfRepository length] <= 0) {
+        descriptionOfRepository = @"No Description";
     }
-    NSString *user = [[self.resultsArray objectAtIndex:indexPath.row]valueForKey:@"username"];
+    NSString *user = [[self.resultsArray objectAtIndex:indexPath.section]valueForKey:@"username"];
     if ([user length] <= 0) {
         user = @"No Username";
     }
-    cell.textLabel.text = nameOfRepository;
-    cell.detailTextLabel.text = user;
+    NSString *nameOfRepository = [[self.resultsArray objectAtIndex:indexPath.section]valueForKey:@"name"];
+    if ([nameOfRepository length] <= 0) {
+        nameOfRepository = @"No Name";
+    }
+    NSString *language = [[self.resultsArray objectAtIndex:indexPath.section]valueForKey:@"language"];
+    if ([language length] <= 0) {
+        language = @"Not Specified";
+    }
+    cell.repositoryDescription.text = descriptionOfRepository;
+    cell.repositoryName.text = nameOfRepository;
+    cell.repositoryUser.text = user;
+    cell.repositoryLanguage.text = language;
     return cell;
+}
+- (float)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0;
+}
+- (float)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 30;
+}
+- (UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIView *foot = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 30)];
+    UIImageView *sep = [[UIImageView alloc]initWithFrame:CGRectMake(10, 14, 300, 3)];
+    sep.image = [UIImage imageNamed:@"seperator.png"];
+    [foot addSubview:sep];
+    return foot;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+   self.username = [[self.resultsArray objectAtIndex:indexPath.section]valueForKey:@"username"];
+     self.reposit = [[self.resultsArray objectAtIndex:indexPath.section]valueForKey:@"name"];
+    [self searchGithubFor:username repo:reposit];
 }
 /*
 // Override to support conditional editing of the table view.
@@ -150,6 +183,52 @@
 
 
 
+- (void)searchGithubFor:(NSString *)user repo:(NSString*)repo{
+    
+    dispatch_async( dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        // Add code here to do background processing
+        NSString *URLString = [NSString stringWithFormat:kBlobs,user,repo];
+        NSURL *URL = [NSURL URLWithString:URLString];
+        NSData *data = [NSData dataWithContentsOfURL:URL];
+        
+        dispatch_async( dispatch_get_main_queue(), ^{
+            // Add code here to update the UI/send notifications based on the
+            [self fetchedData:data];
+            
+        });
+    });
+    
+}
+
+
+
+- (void)fetchedData:(NSData *)responseData {
+    //parse out the json data
+    NSError* error;
+    NSDictionary* json = [NSJSONSerialization 
+                          JSONObjectWithData:responseData 
+                          options:kNilOptions 
+                          error:&error];
+    NSMutableDictionary *files = [json objectForKey:@"blobs"];
+    NSMutableArray *allFIles = [[NSMutableArray alloc]initWithCapacity:[files count]];
+    allFIles = [[files allKeys]mutableCopy];
+    NSLog(@"Respose:%@",allFIles);
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+//    FilesListViewController *filesList = [storyboard instantiateViewControllerWithIdentifier:@"FilesListViewController"];
+//    [filesList setFilesList:allFIles];
+//    [filesList setFileDictionary:files];
+//    [filesList setUser:self.username];
+//    [filesList setRepository:self.reposit];
+//    [self.detailViewController.navigationController pushViewController:filesList animated:YES];
+    
+    CommitsViewController *commits = [storyboard instantiateViewControllerWithIdentifier:@"CommitsView"];
+    [commits setRepository:self.reposit];
+    [commits setUser:self.username];
+    [commits setDetailViewController:self.detailViewController];
+    [self.navigationController pushViewController:commits animated:YES];
+}
+    
 
 
 

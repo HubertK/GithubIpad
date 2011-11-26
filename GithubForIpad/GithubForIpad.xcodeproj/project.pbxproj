@@ -7,6 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		398ABCE4147C72A000812C07 /* seperator.png in Resources */ = {isa = PBXBuildFile; fileRef = 398ABCE3147C72A000812C07 /* seperator.png */; };
+		398ABCE8147C73C900812C07 /* ResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 398ABCE7147C73C900812C07 /* ResultCell.m */; };
+		398ABCEB147C919D00812C07 /* FilesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398ABCEA147C919D00812C07 /* FilesListViewController.m */; };
+		398ABCEE147C98D300812C07 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398ABCED147C98D300812C07 /* TextViewController.m */; };
+		398ABCF1147CACC900812C07 /* CommitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398ABCF0147CACC900812C07 /* CommitsViewController.m */; };
+		398ABCF3147CB96E00812C07 /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = 398ABCF2147CB96E00812C07 /* tree.png */; };
+		398ABCF5147CB9B400812C07 /* text-48_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 398ABCF4147CB9B400812C07 /* text-48_32.png */; };
+		398ABD97147D8F5C00812C07 /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 398ABD94147D8F5C00812C07 /* NSAttributedString+Attributes.m */; };
+		398ABD98147D8F5C00812C07 /* OHAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 398ABD96147D8F5C00812C07 /* OHAttributedLabel.m */; };
+		398ABD9B147D8F8C00812C07 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398ABD9A147D8F8C00812C07 /* CoreText.framework */; };
+		398ABD9E147D914400812C07 /* HTMLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 398ABD9D147D914400812C07 /* HTMLView.m */; };
+		398ABDA1147D981800812C07 /* HTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398ABDA0147D981700812C07 /* HTMLViewController.m */; };
+		398ABDA4147DC1CC00812C07 /* Highlighting.m in Sources */ = {isa = PBXBuildFile; fileRef = 398ABDA3147DC1CC00812C07 /* Highlighting.m */; };
+		398ABDD3147DE0B300812C07 /* HTMLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398ABDD2147DE0B200812C07 /* HTMLWebViewController.m */; };
+		398ABDDD147E01C800812C07 /* png-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 398ABDDC147E01C800812C07 /* png-48.png */; };
+		398ABDE5147E047600812C07 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 398ABDE3147E047600812C07 /* folder.png */; };
+		398ABDE6147E047600812C07 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 398ABDE4147E047600812C07 /* images.png */; };
+		398ABDE9147E054200812C07 /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = 398ABDE8147E054200812C07 /* other.png */; };
+		398ABDEB147E083C00812C07 /* Images-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 398ABDEA147E083C00812C07 /* Images-icon.png */; };
+		398ABE72147F5CC700812C07 /* lang-apollo.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE5E147F5CC700812C07 /* lang-apollo.js */; };
+		398ABE73147F5CC700812C07 /* lang-clj.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE5F147F5CC700812C07 /* lang-clj.js */; };
+		398ABE74147F5CC700812C07 /* lang-css.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE60147F5CC700812C07 /* lang-css.js */; };
+		398ABE75147F5CC700812C07 /* lang-go.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE61147F5CC700812C07 /* lang-go.js */; };
+		398ABE76147F5CC700812C07 /* lang-hs.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE62147F5CC700812C07 /* lang-hs.js */; };
+		398ABE77147F5CC700812C07 /* lang-lisp.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE63147F5CC700812C07 /* lang-lisp.js */; };
+		398ABE78147F5CC700812C07 /* lang-lua.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE64147F5CC700812C07 /* lang-lua.js */; };
+		398ABE79147F5CC700812C07 /* lang-ml.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE65147F5CC700812C07 /* lang-ml.js */; };
+		398ABE7A147F5CC700812C07 /* lang-n.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE66147F5CC700812C07 /* lang-n.js */; };
+		398ABE7B147F5CC700812C07 /* lang-proto.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE67147F5CC700812C07 /* lang-proto.js */; };
+		398ABE7C147F5CC700812C07 /* lang-scala.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE68147F5CC700812C07 /* lang-scala.js */; };
+		398ABE7D147F5CC700812C07 /* lang-sql.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE69147F5CC700812C07 /* lang-sql.js */; };
+		398ABE7E147F5CC700812C07 /* lang-tex.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE6A147F5CC700812C07 /* lang-tex.js */; };
+		398ABE7F147F5CC700812C07 /* lang-vb.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE6B147F5CC700812C07 /* lang-vb.js */; };
+		398ABE80147F5CC700812C07 /* lang-vhdl.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE6C147F5CC700812C07 /* lang-vhdl.js */; };
+		398ABE81147F5CC700812C07 /* lang-wiki.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE6D147F5CC700812C07 /* lang-wiki.js */; };
+		398ABE82147F5CC700812C07 /* lang-xq.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE6E147F5CC700812C07 /* lang-xq.js */; };
+		398ABE83147F5CC700812C07 /* lang-yaml.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE6F147F5CC700812C07 /* lang-yaml.js */; };
+		398ABE85147F5CC700812C07 /* prettify.js in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE71147F5CC700812C07 /* prettify.js */; };
+		398ABE921480543500812C07 /* numberLines.js in Sources */ = {isa = PBXBuildFile; fileRef = 398ABE911480543500812C07 /* numberLines.js */; };
+		398ABE94148062CA00812C07 /* CodeBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 398ABE93148062CA00812C07 /* CodeBackground.png */; };
+		398ABE96148067FC00812C07 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398ABE95148067FB00812C07 /* QuartzCore.framework */; };
+		398ABEA31480A24A00812C07 /* back3.png in Resources */ = {isa = PBXBuildFile; fileRef = 398ABEA21480A24A00812C07 /* back3.png */; };
+		398ABEA51480A37B00812C07 /* prettify.css in Resources */ = {isa = PBXBuildFile; fileRef = 398ABEA41480A37B00812C07 /* prettify.css */; };
 		57D5C9D2147C2C3A0029EEF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D5C9D1147C2C3A0029EEF0 /* UIKit.framework */; };
 		57D5C9D4147C2C3A0029EEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D5C9D3147C2C3A0029EEF0 /* Foundation.framework */; };
 		57D5C9D6147C2C3A0029EEF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D5C9D5147C2C3A0029EEF0 /* CoreGraphics.framework */; };
@@ -22,6 +65,59 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		398ABCE3147C72A000812C07 /* seperator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seperator.png; sourceTree = "<group>"; };
+		398ABCE6147C73C900812C07 /* ResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultCell.h; sourceTree = "<group>"; };
+		398ABCE7147C73C900812C07 /* ResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultCell.m; sourceTree = "<group>"; };
+		398ABCE9147C919D00812C07 /* FilesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilesListViewController.h; sourceTree = "<group>"; };
+		398ABCEA147C919D00812C07 /* FilesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilesListViewController.m; sourceTree = "<group>"; };
+		398ABCEC147C98D300812C07 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		398ABCED147C98D300812C07 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		398ABCEF147CACC900812C07 /* CommitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitsViewController.h; sourceTree = "<group>"; };
+		398ABCF0147CACC900812C07 /* CommitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitsViewController.m; sourceTree = "<group>"; };
+		398ABCF2147CB96E00812C07 /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree.png; sourceTree = "<group>"; };
+		398ABCF4147CB9B400812C07 /* text-48_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-48_32.png"; sourceTree = "<group>"; };
+		398ABD93147D8F5C00812C07 /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
+		398ABD94147D8F5C00812C07 /* NSAttributedString+Attributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Attributes.m"; sourceTree = "<group>"; };
+		398ABD95147D8F5C00812C07 /* OHAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHAttributedLabel.h; sourceTree = "<group>"; };
+		398ABD96147D8F5C00812C07 /* OHAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHAttributedLabel.m; sourceTree = "<group>"; };
+		398ABD9A147D8F8C00812C07 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		398ABD9C147D914400812C07 /* HTMLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLView.h; sourceTree = "<group>"; };
+		398ABD9D147D914400812C07 /* HTMLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLView.m; sourceTree = "<group>"; };
+		398ABD9F147D981700812C07 /* HTMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLViewController.h; sourceTree = "<group>"; };
+		398ABDA0147D981700812C07 /* HTMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLViewController.m; sourceTree = "<group>"; };
+		398ABDA2147DC1CC00812C07 /* Highlighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Highlighting.h; sourceTree = "<group>"; };
+		398ABDA3147DC1CC00812C07 /* Highlighting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Highlighting.m; sourceTree = "<group>"; };
+		398ABDD1147DE0B200812C07 /* HTMLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLWebViewController.h; sourceTree = "<group>"; };
+		398ABDD2147DE0B200812C07 /* HTMLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLWebViewController.m; sourceTree = "<group>"; };
+		398ABDDC147E01C800812C07 /* png-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "png-48.png"; sourceTree = "<group>"; };
+		398ABDE3147E047600812C07 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
+		398ABDE4147E047600812C07 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		398ABDE8147E054200812C07 /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other.png; sourceTree = "<group>"; };
+		398ABDEA147E083C00812C07 /* Images-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Images-icon.png"; sourceTree = "<group>"; };
+		398ABE5E147F5CC700812C07 /* lang-apollo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-apollo.js"; sourceTree = "<group>"; };
+		398ABE5F147F5CC700812C07 /* lang-clj.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-clj.js"; sourceTree = "<group>"; };
+		398ABE60147F5CC700812C07 /* lang-css.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-css.js"; sourceTree = "<group>"; };
+		398ABE61147F5CC700812C07 /* lang-go.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-go.js"; sourceTree = "<group>"; };
+		398ABE62147F5CC700812C07 /* lang-hs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-hs.js"; sourceTree = "<group>"; };
+		398ABE63147F5CC700812C07 /* lang-lisp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-lisp.js"; sourceTree = "<group>"; };
+		398ABE64147F5CC700812C07 /* lang-lua.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-lua.js"; sourceTree = "<group>"; };
+		398ABE65147F5CC700812C07 /* lang-ml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-ml.js"; sourceTree = "<group>"; };
+		398ABE66147F5CC700812C07 /* lang-n.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-n.js"; sourceTree = "<group>"; };
+		398ABE67147F5CC700812C07 /* lang-proto.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-proto.js"; sourceTree = "<group>"; };
+		398ABE68147F5CC700812C07 /* lang-scala.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-scala.js"; sourceTree = "<group>"; };
+		398ABE69147F5CC700812C07 /* lang-sql.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-sql.js"; sourceTree = "<group>"; };
+		398ABE6A147F5CC700812C07 /* lang-tex.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-tex.js"; sourceTree = "<group>"; };
+		398ABE6B147F5CC700812C07 /* lang-vb.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-vb.js"; sourceTree = "<group>"; };
+		398ABE6C147F5CC700812C07 /* lang-vhdl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-vhdl.js"; sourceTree = "<group>"; };
+		398ABE6D147F5CC700812C07 /* lang-wiki.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-wiki.js"; sourceTree = "<group>"; };
+		398ABE6E147F5CC700812C07 /* lang-xq.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-xq.js"; sourceTree = "<group>"; };
+		398ABE6F147F5CC700812C07 /* lang-yaml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-yaml.js"; sourceTree = "<group>"; };
+		398ABE71147F5CC700812C07 /* prettify.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prettify.js; sourceTree = "<group>"; };
+		398ABE911480543500812C07 /* numberLines.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = numberLines.js; sourceTree = "<group>"; };
+		398ABE93148062CA00812C07 /* CodeBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CodeBackground.png; sourceTree = "<group>"; };
+		398ABE95148067FB00812C07 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		398ABEA21480A24A00812C07 /* back3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back3.png; sourceTree = "<group>"; };
+		398ABEA41480A37B00812C07 /* prettify.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = prettify.css; sourceTree = "<group>"; };
 		57D5C9CD147C2C3A0029EEF0 /* GithubForIpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubForIpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D5C9D1147C2C3A0029EEF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		57D5C9D3147C2C3A0029EEF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,6 +143,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398ABE96148067FC00812C07 /* QuartzCore.framework in Frameworks */,
+				398ABD9B147D8F8C00812C07 /* CoreText.framework in Frameworks */,
 				57D5C9D2147C2C3A0029EEF0 /* UIKit.framework in Frameworks */,
 				57D5C9D4147C2C3A0029EEF0 /* Foundation.framework in Frameworks */,
 				57D5C9D6147C2C3A0029EEF0 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +154,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		398ABD99147D8F6100812C07 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				398ABD93147D8F5C00812C07 /* NSAttributedString+Attributes.h */,
+				398ABD94147D8F5C00812C07 /* NSAttributedString+Attributes.m */,
+				398ABD95147D8F5C00812C07 /* OHAttributedLabel.h */,
+				398ABD96147D8F5C00812C07 /* OHAttributedLabel.m */,
+			);
+			name = html;
+			sourceTree = "<group>";
+		};
+		398ABE5D147F5CC700812C07 /* Prettify */ = {
+			isa = PBXGroup;
+			children = (
+				398ABEA41480A37B00812C07 /* prettify.css */,
+				398ABE911480543500812C07 /* numberLines.js */,
+				398ABE5E147F5CC700812C07 /* lang-apollo.js */,
+				398ABE5F147F5CC700812C07 /* lang-clj.js */,
+				398ABE60147F5CC700812C07 /* lang-css.js */,
+				398ABE61147F5CC700812C07 /* lang-go.js */,
+				398ABE62147F5CC700812C07 /* lang-hs.js */,
+				398ABE63147F5CC700812C07 /* lang-lisp.js */,
+				398ABE64147F5CC700812C07 /* lang-lua.js */,
+				398ABE65147F5CC700812C07 /* lang-ml.js */,
+				398ABE66147F5CC700812C07 /* lang-n.js */,
+				398ABE67147F5CC700812C07 /* lang-proto.js */,
+				398ABE68147F5CC700812C07 /* lang-scala.js */,
+				398ABE69147F5CC700812C07 /* lang-sql.js */,
+				398ABE6A147F5CC700812C07 /* lang-tex.js */,
+				398ABE6B147F5CC700812C07 /* lang-vb.js */,
+				398ABE6C147F5CC700812C07 /* lang-vhdl.js */,
+				398ABE6D147F5CC700812C07 /* lang-wiki.js */,
+				398ABE6E147F5CC700812C07 /* lang-xq.js */,
+				398ABE6F147F5CC700812C07 /* lang-yaml.js */,
+				398ABE71147F5CC700812C07 /* prettify.js */,
+			);
+			path = Prettify;
+			sourceTree = "<group>";
+		};
 		57D5C9C2147C2C3A0029EEF0 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +213,8 @@
 		57D5C9D0147C2C3A0029EEF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				398ABE95148067FB00812C07 /* QuartzCore.framework */,
+				398ABD9A147D8F8C00812C07 /* CoreText.framework */,
 				57D5C9D1147C2C3A0029EEF0 /* UIKit.framework */,
 				57D5C9D3147C2C3A0029EEF0 /* Foundation.framework */,
 				57D5C9D5147C2C3A0029EEF0 /* CoreGraphics.framework */,
@@ -89,10 +228,29 @@
 				57D5C9E0147C2C3A0029EEF0 /* GitAppDelegate.h */,
 				57D5C9E1147C2C3A0029EEF0 /* GitAppDelegate.m */,
 				57D5C9E3147C2C3A0029EEF0 /* MainStoryboard.storyboard */,
+				398ABDD1147DE0B200812C07 /* HTMLWebViewController.h */,
+				398ABDD2147DE0B200812C07 /* HTMLWebViewController.m */,
+				398ABD9C147D914400812C07 /* HTMLView.h */,
+				398ABD9D147D914400812C07 /* HTMLView.m */,
+				398ABD9F147D981700812C07 /* HTMLViewController.h */,
+				398ABDA0147D981700812C07 /* HTMLViewController.m */,
+				398ABCEF147CACC900812C07 /* CommitsViewController.h */,
+				398ABCF0147CACC900812C07 /* CommitsViewController.m */,
+				398ABDA2147DC1CC00812C07 /* Highlighting.h */,
+				398ABDA3147DC1CC00812C07 /* Highlighting.m */,
+				398ABCEC147C98D300812C07 /* TextViewController.h */,
+				398ABCED147C98D300812C07 /* TextViewController.m */,
 				57D5C9E6147C2C3A0029EEF0 /* GitMasterViewController.h */,
 				57D5C9E7147C2C3A0029EEF0 /* GitMasterViewController.m */,
+				398ABCE9147C919D00812C07 /* FilesListViewController.h */,
+				398ABCEA147C919D00812C07 /* FilesListViewController.m */,
 				57D5C9E9147C2C3A0029EEF0 /* GitDetailViewController.h */,
 				57D5C9EA147C2C3A0029EEF0 /* GitDetailViewController.m */,
+				398ABCE6147C73C900812C07 /* ResultCell.h */,
+				398ABCE7147C73C900812C07 /* ResultCell.m */,
+				398ABE93148062CA00812C07 /* CodeBackground.png */,
+				398ABE5D147F5CC700812C07 /* Prettify */,
+				398ABD99147D8F6100812C07 /* html */,
 				57D5C9D8147C2C3A0029EEF0 /* Supporting Files */,
 			);
 			path = GithubForIpad;
@@ -101,6 +259,15 @@
 		57D5C9D8147C2C3A0029EEF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				398ABEA21480A24A00812C07 /* back3.png */,
+				398ABDE3147E047600812C07 /* folder.png */,
+				398ABDE4147E047600812C07 /* images.png */,
+				398ABDEA147E083C00812C07 /* Images-icon.png */,
+				398ABCF4147CB9B400812C07 /* text-48_32.png */,
+				398ABDDC147E01C800812C07 /* png-48.png */,
+				398ABDE8147E054200812C07 /* other.png */,
+				398ABCF2147CB96E00812C07 /* tree.png */,
+				398ABCE3147C72A000812C07 /* seperator.png */,
 				57D5C9F5147C31BA0029EEF0 /* 200px-GitHub.png */,
 				57D5C9F6147C31BA0029EEF0 /* github-logo.png */,
 				57D5C9F9147C3ACE0029EEF0 /* searchbox.png */,
@@ -168,6 +335,36 @@
 				57D5C9F7147C31BA0029EEF0 /* 200px-GitHub.png in Resources */,
 				57D5C9F8147C31BA0029EEF0 /* github-logo.png in Resources */,
 				57D5C9FA147C3ACE0029EEF0 /* searchbox.png in Resources */,
+				398ABCE4147C72A000812C07 /* seperator.png in Resources */,
+				398ABCF3147CB96E00812C07 /* tree.png in Resources */,
+				398ABCF5147CB9B400812C07 /* text-48_32.png in Resources */,
+				398ABDDD147E01C800812C07 /* png-48.png in Resources */,
+				398ABDE5147E047600812C07 /* folder.png in Resources */,
+				398ABDE6147E047600812C07 /* images.png in Resources */,
+				398ABDE9147E054200812C07 /* other.png in Resources */,
+				398ABE72147F5CC700812C07 /* lang-apollo.js in Resources */,
+				398ABE73147F5CC700812C07 /* lang-clj.js in Resources */,
+				398ABE74147F5CC700812C07 /* lang-css.js in Resources */,
+				398ABE75147F5CC700812C07 /* lang-go.js in Resources */,
+				398ABE76147F5CC700812C07 /* lang-hs.js in Resources */,
+				398ABE77147F5CC700812C07 /* lang-lisp.js in Resources */,
+				398ABE78147F5CC700812C07 /* lang-lua.js in Resources */,
+				398ABE79147F5CC700812C07 /* lang-ml.js in Resources */,
+				398ABE7A147F5CC700812C07 /* lang-n.js in Resources */,
+				398ABE7B147F5CC700812C07 /* lang-proto.js in Resources */,
+				398ABE7C147F5CC700812C07 /* lang-scala.js in Resources */,
+				398ABE7D147F5CC700812C07 /* lang-sql.js in Resources */,
+				398ABE7E147F5CC700812C07 /* lang-tex.js in Resources */,
+				398ABE7F147F5CC700812C07 /* lang-vb.js in Resources */,
+				398ABE80147F5CC700812C07 /* lang-vhdl.js in Resources */,
+				398ABE81147F5CC700812C07 /* lang-wiki.js in Resources */,
+				398ABE82147F5CC700812C07 /* lang-xq.js in Resources */,
+				398ABE83147F5CC700812C07 /* lang-yaml.js in Resources */,
+				398ABE85147F5CC700812C07 /* prettify.js in Resources */,
+				398ABDEB147E083C00812C07 /* Images-icon.png in Resources */,
+				398ABE94148062CA00812C07 /* CodeBackground.png in Resources */,
+				398ABEA31480A24A00812C07 /* back3.png in Resources */,
+				398ABEA51480A37B00812C07 /* prettify.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +379,17 @@
 				57D5C9E2147C2C3A0029EEF0 /* GitAppDelegate.m in Sources */,
 				57D5C9E8147C2C3A0029EEF0 /* GitMasterViewController.m in Sources */,
 				57D5C9EB147C2C3A0029EEF0 /* GitDetailViewController.m in Sources */,
+				398ABCE8147C73C900812C07 /* ResultCell.m in Sources */,
+				398ABCEB147C919D00812C07 /* FilesListViewController.m in Sources */,
+				398ABCEE147C98D300812C07 /* TextViewController.m in Sources */,
+				398ABCF1147CACC900812C07 /* CommitsViewController.m in Sources */,
+				398ABD97147D8F5C00812C07 /* NSAttributedString+Attributes.m in Sources */,
+				398ABD98147D8F5C00812C07 /* OHAttributedLabel.m in Sources */,
+				398ABD9E147D914400812C07 /* HTMLView.m in Sources */,
+				398ABDA1147D981800812C07 /* HTMLViewController.m in Sources */,
+				398ABDA4147DC1CC00812C07 /* Highlighting.m in Sources */,
+				398ABDD3147DE0B300812C07 /* HTMLWebViewController.m in Sources */,
+				398ABE921480543500812C07 /* numberLines.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +503,7 @@
 				57D5C9F0147C2C3A0029EEF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

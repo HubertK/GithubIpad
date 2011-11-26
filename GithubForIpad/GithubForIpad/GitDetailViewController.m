@@ -5,7 +5,7 @@
 //        Created by Hubert Kunnemeyer  
 //  Copyright 2011 Hubert Kunnemeyer Developer. 
 //            All rights reserved.
-
+#define kBlobs @ "http://github.com/api/v2/json/blob/all/%@/%@/master"//username,repo
 #define kGithubBaseURL @"http://github.com/api/v2/json/repos/search/%@"
 #import "GitDetailViewController.h"
 

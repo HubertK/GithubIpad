@@ -14,4 +14,9 @@
 
 @property (strong, nonatomic) GitDetailViewController *detailViewController;
 @property (strong, nonatomic) NSMutableArray *resultsArray;
+@property (strong, nonatomic) NSString *username;
+@property (strong, nonatomic) NSString *reposit;
+
+- (void)searchGithubFor:(NSString *)user repo:(NSString*)repo;
+- (void)fetchedData:(NSData *)responseData;
 @end
